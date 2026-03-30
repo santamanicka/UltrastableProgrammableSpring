@@ -2,7 +2,7 @@
 
 Source code and data for the ECAL 2009 paper:
 
-> **Manicka, S.** "Local Ultrastability in a Real Complex Dynamical System." *Proceedings of the European Conference on Artificial Life (ECAL)*, 2009.
+> **Manicka, S., Di Paolo, Ezequiel.** "Local Ultrastability in a Real Complex Dynamical System." *Proceedings of the European Conference on Artificial Life (ECAL)*, 2009.
 
 ## Overview
 
