@@ -97,9 +97,9 @@ ecal2009_ultrastability/
 ### System Overview
 
 ```
-┌──────────────────────┐     Serial (RS232)     ┌──────────────────────┐
-│   PC Application     │◄──────────────────────►│  PIC18F4680 Firmware │
-│  (Borland C++ Builder)│                        │  (Programmable Spring)│
+┌──────────────────────┐     Serial (RS232)      ┌──────────────────────┐
+│   PC Application     │◄──────────────────────► │  PIC18F4680 Firmware │
+│ (Borland C++ Builder)│                         │ (Programmable Spring)│
 │                      │     Profile Upload      │                      │
 │  - Profile Editor    │────────────────────────►│  - Force Profile     │
 │  - Mutation Logger   │                         │    (64-point table)  │
