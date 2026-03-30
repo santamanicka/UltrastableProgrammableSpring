@@ -1,0 +1,45 @@
+Titles - Abstract, Introduction, Methods, Experiments, Analysis/Discussion, Conclusion, References
+
+Abstract + Introduction = 2
+Methods = 2
+Experiments (1 directed, 1 undirected) = 2.5
+Discussion = 1
+References = 0.5
+
+Notes
+------
+Abstract:
+---------
+Can ultrastability and dynamic non-linear behavior programmability be combined to produce adaptive behavior in a robot? Yes, based on an approach that feeds real-time information about the robot's position in its phase space to its ultrastable intelligence that then re-programs the robot's behavior dynamically with a generic objective of achieving equilibrium in its behavior, static or dynamic, in the face of perturbations, external or internal. A real robot actuator powered by a technology called “programmable spring” was used to control a see-saw platform. A metal ball was placed on it and the actuator’s  objective was set to bring the platform to a horizontal position. Different flavors of ultrastability were tested in the actuator’s control software and accordingly different flavors of the balancing behavior were observed. Qualitative and quantitative analyses of the results have indicated that the actuator's behavior in deed tended to be adaptive, though slow and gradual thus setting the stage for  alluring new research in ultrastable robotics.
+
+Corrections to abstract:
+------------------------
+- Quite possibly, based on an approach that uses a customized version of ultrastability to monitor the robot's trails in the phase space and when they do not approach the desired equilibrium area, mutate its behavior.
+- Quite possibly, based on an approach that uses a customized version of ultrastability to monitor the robot's trail in the phase space and when a particular piece of the trail is not contained within a 'local equilibrium area', mutate the responsible piece of behavior specification appropriately and thus hope for an eventual attainment of global equilibrium, also known as adapted behaviour.
+
+New abstract:
+-------------
+How to achieve a far-fetched objective amidst obstacles? By moving towards the objective gradually and by making sure at every step that there is as less digression as possible while learning to adapt to the obstacles. We have used this real-life inspiration to model a strategy to learning to attain stability (equilibrium) in a real complex dynamical system, amidst perturbations, using ultrastability to make sure that the path to stability itself is stable or at least near-stable. We have tested this approach on a real robot actuator powered by a technology called "programmable spring" that allows for real-time non-linear behavior programming. The experiments involved a see-saw platform controlled by the actuator over which a metal ball was introduced as a permanent perturbation. The actuator's objective was then to find a strategy to stabilize the platform, that is to bring it to a horizontal position, by learning to adapt to the ball's presence. Ultrastability was used to tweak the real-time trails in the actuator's phase space and to get them to 'proper shape'. Observations have showed that our approach was in deed effective in producing adaptive behavior though not practicable yet, thus laying a promising foundation for a new perspective in ultrastable robotics.
+
+Introduction:
+-------------
+Big picture -- what is ultrastability, how it was originally introduced as a model of animal nervous system, how research in ER has used ultrastability to model nervous systems, how ultrastability can be, in principle, used as a generic adaptive mechanism (like body dynamics), how it has been used in such a context and what is the actual experiment?
+-- Ultrastability is a mechanism for adaptation (brief description in the words of Ashby). So far, it has been tested in neural dynamics (homeostat, sensory inversion) as it was originally proposed in that context. Though this idea can in principle be adopted in body/motion dynamics too, not a lot of testing has been done (except for a few like wormeostat? -- each ultrastable part of the wormeostat has only one objective; our aim is to show that within each of these, multiple local objectives can be accomplished using ultrastability because such a more distributed (within each entity) approach might become inevitable in bigger, more complex robots)
+-- Ultrastability essentially is a flavor of a search process - in this case, it is the search for a force profile.
+-- Core of control systems theory - objective is to achieve specified values for a set of variables; any difference between the real-time values of these variables and that of the objective will be used to correct the behavior of the system. 
+-- In our work, as in control systems the overall objective is set to a point (or an area) in the phase space and it is achieved by achieving local objectives (elaboration needed) that lead to the overall objective. Control is spead in the sense that the overall objective is not directly tied to the behavior of the system (as is usually done in control systems). 
+-- Ultrastability is used to achieve these local objectives - when the behavior at any point in phase space (variables of the sytem) falls beyond a marked area, then that piece of the force profile thats responsible for this erratic behavior is corrected/mutated (the force profile is viewed as the parameter of the dynamical system under consideration)
+-- A variety of real world objectives (stationary, constant rotation in one direction with different velocities, flip-flop motion, chaotic motion?) can be illustrated on the phase space and that will be the objective of the system. The path that should ideally lead to this objective can either be automatically set or prescribed. Ultrastability can then be used as a control-tool to direct the behavior of the system towards this prescribed path. 
+-- This proposal is only exploratory. In order to implement this in real world, one has to address questions like - how efficient is this method compared to others? How adaptable is this method with others? How open-ended is this? Can the objective be automatically/dynamically set when used with say another actuator that uses the same method? How about the dynamical prescription of the path to objective? How "social" can this approach be in the sense, how flexibly can the objective be adjusted in order to cooperate with others? (May be a lot of these questions have a positive response already, as ultrastability already provides that kind of flexibility needed in these cases) 
+-- Nevertheless, what is our motivation behind the proposal? - ultrastability seems to be the essence of robust adaptive behavior and in principle applicable to a variety of environments from neural (sensory inversion) to physical (Wormeostat, homeostat).
+-- This technique is more suitable for a system whose behavior is not dictated by standard mathematical equations (and therefore quantitative/directed learning is not possible). In our system, since the behavior is dictated by a non-linear curve itself rather than an equation that dictates the curve, it becomes necessary to use a learning technique that involves a non-directed learning -- inevitably something that involved randomness??
+
+Discussion
+----------
+- A problem of balancing act was chosen to be the stage on which to test our method. The problem to be solved was kept deliberately simple as a combination of novel technology and and unusual adaptation mechanism was to be tested. 
+
+Initial mutation range (Z) = 100
+Alpha (W) = 30 deg
+TVZ radius factor (X) = 2
+Mutation range factor (Y) = 80
+Number of analysis samples (V) = 250
